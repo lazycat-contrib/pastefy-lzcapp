@@ -1,0 +1,38 @@
+{
+  "name": "Pastefy",
+  "package": "cloud.lazycat.app.pastefy",
+  "description": "pasty",
+  "homepage": "https://github.com/interaapps/pastefy",
+  "author": "interaapps",
+  "app_features": [
+    "background_task",
+    "public_path"
+  ],
+  "subdomain": "pastefy",
+  "version": "7.0.3",
+  "public_paths": [
+    "/"
+  ],
+  "iconPath": "icon.png",
+  "composePath": "docker-compose.yml",
+  "unsupported_platforms": [],
+  "lastRouteType": "from_compose",
+  "port_mappings": {
+    "pastefy_9999_80": {
+      "use": true,
+      "type": "http",
+      "path": "/",
+      "targetPath": "/"
+    }
+  },
+  "image_mariadb_10.11": {
+    "originalImage": "mariadb:10.11",
+    "pushTarget": "none"
+  },
+  "db_volume_dbvol_/var/lib/mysql_action": "emptyDir",
+  "db_volume_/var/lib/mysql_location": "app_data",
+  "image_docker.hlmirror.com_interaapps_pastefy_latest": {
+    "originalImage": "docker.hlmirror.com/interaapps/pastefy:latest",
+    "pushTarget": "none"
+  }
+}
