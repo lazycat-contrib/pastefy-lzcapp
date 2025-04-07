@@ -20,7 +20,7 @@ services:
     
   pastefy-db:
     container_name: pastefy-db
-    image:  docker.hlmirror.com/mariadb:10.11
+    image:  registry.lazycat.cloud/czyt/library/mariadb:a34fe8871205a8fd
     environment:
       - MYSQL_ROOT_PASSWORD=pastefy
       - MYSQL_DATABASE=pastefy
@@ -32,7 +32,7 @@ services:
       test:
         - CMD-SHELL
         - healthcheck.sh --connect --innodb_initialized
-      start_period: 30s
+      start_period: 60s
       
   pastefy:
     image: docker.hlmirror.com/interaapps/pastefy:latest
