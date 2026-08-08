@@ -35,6 +35,7 @@ services:
       start_period: 60s
       
   pastefy:
+  # interaapps/pastefy:7.0.3
     image: docker.hlmirror.com/interaapps/pastefy:latest
     environment:
       - HTTP_SERVER_PORT=80
