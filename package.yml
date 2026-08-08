@@ -1,0 +1,13 @@
+package: cloud.lazycat.app.pastefy
+version: 7.0.3
+name: Pastefy
+description: A self-hosted pastebin for sharing text and code snippets.
+homepage: https://github.com/interaapps/pastefy
+author: interaapps
+locales:
+  en:
+    name: Pastefy
+    description: A self-hosted pastebin for sharing text and code snippets.
+  zh:
+    name: Pastefy
+    description: 用于分享文本和代码片段的自托管 Pastebin。
