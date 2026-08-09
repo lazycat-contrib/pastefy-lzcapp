@@ -1,5 +1,5 @@
 package: cloud.lazycat.app.pastefy
-version: 7.0.3
+version: 7.2.6
 name: Pastefy
 description: A self-hosted pastebin for sharing text and code snippets.
 homepage: https://github.com/interaapps/pastefy
